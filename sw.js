@@ -1,6 +1,6 @@
 /* Landed service worker: keeps a copy of the app on the phone so it opens without a connection.
    Only same-origin files are handled. Weather, exchange rates, webcams and the live room are never cached here. */
-const CACHE="landed-dc45c40902";
+const CACHE="landed-c9cbf364c5";
 const CORE=["./","index.html","manifest.webmanifest","config.js","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/apple-touch-icon.png","icons/favicon-32.png"];
 
 const OWN=new Set(CORE.map(u=>new URL(u,self.registration.scope).href));
